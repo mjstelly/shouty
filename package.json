@@ -1,0 +1,15 @@
+{
+  "name": "shouty",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "description": "Shout your message to to those nearby",
+  "author": "Michael Stelly",
+  "scripts": {
+    "test": "cucumber-js"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^7.2.1",
+    "hamjest": "^3.7.2"
+  }
+}
