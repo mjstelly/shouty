@@ -10,6 +10,7 @@
   },
   "devDependencies": {
     "@cucumber/cucumber": "^7.2.1",
-    "hamjest": "^3.7.2"
+    "hamjest": "^3.7.2",
+    "jest": "^27.0.3"
   }
 }
