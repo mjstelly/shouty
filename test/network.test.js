@@ -48,4 +48,17 @@ describe('Person', () => {
     assert(lucyStub.hear.notCalled)
   })
 
+  it('does not broadcast a message over 180 characters even if listener is in range', function () {
+    const shouterLocation = 0;
+    const listenerLocation = 90;
+    const lucy = new Person(network, listenerLocation);
+    const lucyStub = sinon.spy(lucy);
+
+    network.subscribe(lucy);
+    network.broadcast(longMessage, shouterLocation);
+    if (message.length <= 180) {
+      listener.hear(message);
+    }
+    assert(lucyStub.hear.notCalled);
+  })
 })
