@@ -6,10 +6,11 @@
   "description": "Shout your message to to those nearby",
   "author": "Michael Stelly",
   "scripts": {
-    "test": "cucumber-js"
+    "test": "cucumber-js -f @cucumber/pretty-formatter"
   },
   "devDependencies": {
     "@cucumber/cucumber": "^7.2.1",
+    "@cucumber/pretty-formatter": "latest",
     "hamjest": "^3.7.2",
     "jest": "^27.0.3",
     "sinon": "^11.1.1"
